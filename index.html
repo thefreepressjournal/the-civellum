@@ -549,14 +549,6 @@
       // CORRECCIÓN DEL ENLACE DE REGRESO DE FORMSUBMIT:
       // Utiliza automáticamente la URL pública actual de la web.
 
-      const returnField =
-        document.getElementById('contact-return-url');
-
-      if (returnField && /^https?:$/.test(location.protocol)) {
-        returnField.value =
-          location.origin + location.pathname + '#contacto';
-      }
-
       window.scrollTo(0, 0);
     }
 
